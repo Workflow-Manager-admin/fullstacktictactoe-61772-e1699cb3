@@ -1,0 +1,72 @@
+Starting MongoDB...
+Starting MongoDB setup...
+Starting MongoDB server...
+Waiting for MongoDB to start...
+MongoDB is ready!
+Setting up database and user...
+Current Mongosh Log ID:	685fd284e8b6a950e1baa8b8
+Connecting to:		mongodb://127.0.0.1:5000/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.3
+Using MongoDB:		8.0.11
+Using Mongosh:		2.5.3
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+------
+   The server generated these startup warnings when booting
+   2025-06-28T11:31:10.844+00:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+   2025-06-28T11:31:10.844+00:00: You are running this process as the root user, which is not recommended
+   2025-06-28T11:31:10.844+00:00: Soft rlimits for open file descriptors too low
+   2025-06-28T11:31:10.844+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2025-06-28T11:31:10.844+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2025-06-28T11:31:10.844+00:00: We suggest setting the contents of sysfsFile to 0.
+   2025-06-28T11:31:10.844+00:00: Your system has glibc support for rseq built in, which is not yet supported by tcmalloc-google and has critical performance implications. Please set the environment variable GLIBC_TUNABLES=glibc.pthread.rseq=0
+------
+
+test> 
+test> switched to db admin
+admin> 
+admin> 
+admin> ... ... ... ... ... ... ... ... ... { ok: 1 }
+admin> 
+admin> 
+admin> switched to db myapp
+myapp> 
+myapp> 
+myapp> ... ... ... ... ... ... ... ... { ok: 1 }
+myapp> 
+myapp> MongoDB setup complete!
+
+myapp> Connection string saved to db_connection.txt
+MongoDB setup complete!
+Database: myapp
+Admin user: appuser (password: dbuser123)
+App user: appuser (password: dbuser123)
+Port: 5000
+
+Environment variables saved to db_visualizer/mongodb.env
+To use with Node.js viewer, run: source db_visualizer/mongodb.env
+To connect to the database, use one of the following commands:
+mongosh -u appuser -p dbuser123 --port 5000 --authenticationDatabase admin myapp
+mongosh mongodb://appuser:dbuser123@localhost:5000/myapp?authSource=admin
+
+MongoDB is running in the background.
+You can now start your application.
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated gauge@4.0.4: This package is no longer supported.
+
+added 257 packages, and audited 258 packages in 19s
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+MongoDB is starting on port 5000...
